@@ -1,0 +1,15 @@
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\bin\Debug\SVNLog.exe.config
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\bin\Debug\SVNLog.exe
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\bin\Debug\SVNLog.pdb
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.csprojAssemblyReference.cache
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\MainWindow.g.cs
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\App.g.cs
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog_MarkupCompile.cache
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog_MarkupCompile.lref
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\MainWindow.baml
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.g.resources
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.Properties.Resources.resources
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.csproj.GenerateResource.cache
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.csproj.CoreCompileInputs.cache
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.exe
+c:\users\kingsoft\source\repos\SVNLog\SVNLog\obj\Debug\SVNLog.pdb

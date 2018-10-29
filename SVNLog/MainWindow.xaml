@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SVNLog"
+        xmlns:Datas="clr-namespace:SVNLog" x:Class="SVNLog.MainWindow"
+        mc:Ignorable="d"
+        Title="SVNLogCheckTool" Height="651" Width="800">
+    <Window.Resources>
+
+    </Window.Resources>
+
+    <Grid>
+
+        
+        <Viewbox>
+            <Canvas HorizontalAlignment="Left" Width="792" Height="621">
+                <Button Content="浏览" HorizontalAlignment="Left" Margin="193,10,0,0" VerticalAlignment="Top" Width="37" Click="Button_Click_findpath"/>
+                <Label Content="SVN路径" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Canvas.Left="10" Canvas.Top="10"/>
+                <TextBox x:Name="SVNPath" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Text="你的SVN路径" Canvas.Left="70" Canvas.Top="10"/>
+                <DataGrid x:Name="DataGrid" HorizontalAlignment="Left" Height="329" VerticalAlignment="Top" Width="754" SelectionChanged="DataGrid_SelectionChanged" Canvas.Top="62" Canvas.Left="19" IsReadOnly="True" MouseDown="DataGrid_MouseDown">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Revision}" ClipboardContentBinding="{x:Null}" Header="版本号"/>
+                        <DataGridTextColumn Binding="{Binding Author}" ClipboardContentBinding="{x:Null}" Header="用户"/>
+                        <DataGridTextColumn Binding="{Binding Date}" ClipboardContentBinding="{x:Null}" Header="日期"/>
+                        <DataGridTextColumn Binding="{Binding Msg}" ClipboardContentBinding="{x:Null}" Header="消息"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid x:Name="DataGrid2" Height="204" Canvas.Left="19" Canvas.Top="396" Width="754" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Value}" ClipboardContentBinding="{x:Null}" Header="路径"/>
+                        <DataGridTextColumn Binding="{Binding Action}" ClipboardContentBinding="{x:Null}" Header="操作类型"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <ComboBox x:Name="MyComBox" Canvas.Left="500" Canvas.Top="14" Width="93" DisplayMemberPath="Author"/>
+                <ComboBox x:Name="MyComBoxDate" Canvas.Left="348" Canvas.Top="14" Width="94"/>
+                <Button Content="Check" Canvas.Left="630" Canvas.Top="14" Width="75" Click="Button_Click_Check"/>
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</Window>
