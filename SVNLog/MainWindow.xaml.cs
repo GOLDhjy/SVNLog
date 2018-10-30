@@ -168,7 +168,7 @@ namespace SVNLog
         private void DataInit()
         {
             log MyLog = new log();
-            Task Tasks = new Task(() => DatasOperateSystem.ReadXmlAsync(Xmlpath, out MyLog));
+            Task Tasks = new Task(() => DatasOperateSystem.ReadXmlAsync(Xmlpath, out MyLog));//利用task创造线程。
             Tasks.Start();
             Tasks.Wait();
             foreach (logentry item in MyLog.Logentrie)

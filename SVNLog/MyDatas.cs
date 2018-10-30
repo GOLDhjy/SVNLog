@@ -21,7 +21,7 @@ namespace SVNLog
         //}
     }
     [Serializable]
-    public class logentry
+    public struct logentry
     {
         private string revision;
         private string author;  
